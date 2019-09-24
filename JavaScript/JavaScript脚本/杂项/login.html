@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		<!--登录页面-->
+		<div class="login">
+			<!--1.头部-->
+			<div class="login-head">
+				<div class="login-head-logo">
+					<!--1.1左边图片-->
+					<div class="logo-zb">
+						<img src="img/login/logo.png" / >
+					</div>					
+					<!--1.2欢迎登录-->
+					<div class="logo-zz">
+						<span >欢迎登录</span>
+					</div>						
+					<!--1.3求助热线-->
+					<div class="logo-yb">
+						<span >如遇到登录问题，请拨打客服热线
+						    <span class="red">400-888-5105</span> 
+					    </span>
+					</div>										
+				</div>
+			</div>
+			<!--2.中间-->
+			<div class="login-central">
+				<!--登录注册框-->
+				<div class="login-central-dlzc">
+					<!--2.1上边标题-->
+					<div class="login_info_t">
+                        <span>会员登录</span>
+                        <a href="#">立即注册</a>
+                        <img src="img/login/ewmdl.png" />
+                    </div>  
+                    <!--2.2中间input框-->
+                    <div class="login_info_c">
+                    	<div class="mmdl_box">
+                    		<!--2.2.1请输入用户名-->
+                    		<div class="input_box">
+                                <input name="txtUserName" type="text" maxlength="50" id="txtUserName" tabindex="1" class="login_input" placeholder="请输入用户名">
+                                <i class="user"></i>
+                            </div>
+                            <!--2.2.2忘记用户名-->
+                            <div class="login_txtbox">
+                            	<a href="#" target="_blank">忘记用户名？</a>
+                            </div>
+                            <!--2.2.3请输入密码-->
+                            <div class="input_box">
+                                <input name="txtPwd" type="password" maxlength="36" id="txtPwd" tabindex="2" class="login_input" placeholder="请输入密码">
+                                <i class="suo"></i>
+                            </div>
+                            <!--2.2.4记住登录名和密码-->
+                            <div class="login_txtbox">
+                                <label>
+                                	<span class="chb">
+                                	<input id="ckbRememberLogin" type="checkbox" name="ckbRememberLogin">
+                                	<label for="ckbRememberLogin"> 记住登录名与密码</label>
+                                	</span>
+                                </label>
+                                <a href="/user/back/forgetpwd.aspx" target="_blank" class="ie7-32">忘记密码？</a>
+                            </div>
+                            <input type="submit" value="登 录" onclick="return check();" class="login_btn">
+                    	</div>
+                    </div>
+                    <!--2.3下边登录方式-->
+                    <div class="login_info_b">
+                    	<!--2.3.1其他登录方式-->
+                        <div class="login_info_b_tit">
+                        	其它方式登录：
+                        </div>
+                        <!--2.3.2登录方式-->
+                        <div class="login_qtfs">
+                            <a href="#" class="sjdl">
+                            	<img src="img/login/sjdl.png">
+                            	<br>手机
+                            </a>
+                            <a href="#" title="QQ登录">
+                            	<img src="img/login/qqdl.png" alt="QQ登录">
+                            	<br>QQ
+                            </a>
+                            <a href="#" title="微信登录">
+                            	<img src="img/login/wxdl.png" alt="微信登录">
+                            	<br>微信
+                            </a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<!--3.尾部-->
+			<div class="login-tail">
+                <div class="box">
+                    <div class="footer_info">
+                        <a href="#" target="_blank">搜了网介绍</a>
+                        <a href="#" target="_blank">广告服务</a>
+                        <a href="#" target="_blank">一网通</a>
+                        <a href="#" target="_blank">搜脉APP</a>
+                        <a href="#" target="_blank">网站地图</a>
+                        <a href="#" target="_blank" rel="nofollow">意见反馈</a>
+                        <a href="#" target="_blank">联系我们</a>
+                        <br>
+                                                搜了网  版权所有  总机：400-888-5105
+                        <br>
+                        Copyright © 2019 51Sole Corporation. All Rights Reserved. 增值电信业务经营许可证：粤B2-20090212
+                    </div>
+                </div>
+            </div>
+		</div>
+	</body>
+</html>

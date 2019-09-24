@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+	<input type="date" id="d">
+	<script>
+		var d=document.getElementById('d');
+		var nw=confirm('女生请点击确定');//返回值肯定是布尔值
+		//console.log('nw')
+		d.oninput=function(){
+			//d.value == '2019-03-08' 返回值  对 错
+			//true/false               true/false
+			d.value=='2019-03-08' && nw ? alert('5折优惠'):alert('无优惠')
+		}
+	</script>
+</body>
+</html>
